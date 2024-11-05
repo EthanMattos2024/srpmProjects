@@ -1,1 +1,13 @@
-
+def div42By(divideBy):
+    try:
+        return 42 / divideBy
+    except ZeroDivisionError:
+        print('Error. You tried to divide by zero.')
+        
+        
+print(int(div42By(12)))        
+print(int(div42By(42)))
+try:
+    print(int(div42By(0)))
+except TypeError:
+    print(int(div42By(1)))
